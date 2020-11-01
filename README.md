@@ -13,6 +13,7 @@ How to run the script:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ---------------------------Environment specs-------------------------------------
+
 This script is ideally run with Python 3 compiler
 Libraries to be installed with python
 	- opencv-python (supports older versions)
@@ -21,27 +22,33 @@ PS: Installing both of these completely, ensures the installation of the rest
 the libraries
 
 ------------------------Basic how to run the script on a video-------------------
+
 In a terminal type in:
 python \PATH_TO\freeze_detection.py PATH_TO_VIDEO
 
 Running this will ensure default run of the script on a video and outputs a csv
 log file specifying freezes of more than 1s encountered while parsing the video.
+
 ---------------------------------------------------------------------------------
 
 PS: video can be live streaming or pre-taped/ supports all common video types
 (.mp4, .mov) but should include AVI
    script comes with test videos under directory "Test videos"
 run in terminal as example of test:
+
 ---------------------------------------------------------------------------------
 python freeze_detection.py "Test videos\15 Fps 1600X900.mp4" -Test True
 ---------------------------------------------------------------------------------
 
+
 ######## User parameters ##########
+
 To see all the parameters meant for the end user type in the terminal:
 python \PATH_TO\freeze_detection.py --help
 
 Running this should output:
 ---------------------------------------------------------------------------------
+
 usage: freezevideo.py [-h] [-log_path [LOG_PATH]] [-quality] [-thres [THRES]]
 		      [-frame_affinity [FRAME_AFFINITY]]
                       [-Test [TEST]] [-reduction [REDUCTION]]
@@ -53,6 +60,7 @@ positional arguments:
   path                  video path
 
 optional arguments:
+
   -h, --help            show this help message and exit
   -log_path [LOG_PATH]  log file's path
   -quality, --quiet
@@ -62,8 +70,11 @@ optional arguments:
   -Test [TEST]          test mode
   -reduction [REDUCTION]
                         reduce resolution
+			
 --------------------------------------------------------------------------------
+
 ######## Default values of user parameters #########
+
 (In case options are not specified)
 -log_path: by default location of log file is in the same root directory of the
 		script
@@ -83,6 +94,7 @@ optional arguments:
 Configuration file:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You may edit configuration file: "freeze_config.py" in case performance of the 
 script is not optimal for tests of validation.
 Under appli:
