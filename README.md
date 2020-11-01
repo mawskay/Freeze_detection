@@ -26,6 +26,13 @@ the libraries
 In a terminal type in:
 python \PATH_TO\freeze_detection.py PATH_TO_VIDEO
 
+PATH_TO_VIDEO is either:
+- A path to a folder containing video files (script
+will output a csv file containing all freezes encountered in all videos)
+- Or a path to a single video file
+
+
+
 Running this will ensure default run of the script on a video and outputs a csv
 log file specifying freezes of more than 1s encountered while parsing the video.
 
